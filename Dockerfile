@@ -1,4 +1,4 @@
-FROM hephy/go-dev:v1.5
+FROM hephy/go-dev:v1.5-arm
 # This Dockerfile is used to bundle the source and all dependencies into an image for testing.
 
 RUN echo "deb http://packages.cloud.google.com/apt cloud-sdk-jessie main" \
