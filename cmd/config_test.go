@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/arschles/assert"
-	"github.com/teamhephy/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/api"
 	"github.com/teamhephy/workflow-cli/pkg/testutil"
 )
 

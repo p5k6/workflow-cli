@@ -6,8 +6,8 @@ import (
 	"strings"
 	"syscall"
 
-	hephy "github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/auth"
+	hephy "github.com/p5k6/controller-sdk-go"
+	"github.com/p5k6/controller-sdk-go/auth"
 	"github.com/teamhephy/workflow-cli/settings"
 	"golang.org/x/crypto/ssh/terminal"
 )

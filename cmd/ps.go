@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/api"
-	"github.com/teamhephy/controller-sdk-go/ps"
+	"github.com/p5k6/controller-sdk-go"
+	"github.com/p5k6/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/ps"
 )
 
 // PsList lists an app's processes.

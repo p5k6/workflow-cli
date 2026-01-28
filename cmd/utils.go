@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	hephy "github.com/teamhephy/controller-sdk-go"
+	hephy "github.com/p5k6/controller-sdk-go"
 	"github.com/teamhephy/workflow-cli/pkg/git"
 	"github.com/teamhephy/workflow-cli/settings"
 )

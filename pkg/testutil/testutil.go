@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/teamhephy/controller-sdk-go"
+	"github.com/p5k6/controller-sdk-go"
 	"github.com/teamhephy/workflow-cli/settings"
 )
 

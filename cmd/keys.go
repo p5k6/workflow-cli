@@ -10,8 +10,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/teamhephy/controller-sdk-go/api"
-	"github.com/teamhephy/controller-sdk-go/keys"
+	"github.com/p5k6/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/keys"
 	"github.com/teamhephy/workflow-cli/pkg/ssh"
 	"github.com/teamhephy/workflow-cli/settings"
 )

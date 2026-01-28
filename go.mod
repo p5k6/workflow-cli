@@ -6,8 +6,7 @@ require (
 	github.com/arschles/assert v1.0.0
 	github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815
 	github.com/olekukonko/tablewriter v0.0.5
-	github.com/teamhephy/controller-sdk-go v0.0.0-20181015154232-a1ffb4886a5f
-	github.com/teamhephy/pkg v0.5.1-0.20180912202400-777f37a30108
+	github.com/p5k6/controller-sdk-go v1.202605.0
 	golang.org/x/crypto v0.32.0
 	gopkg.in/yaml.v2 v2.4.0
 )

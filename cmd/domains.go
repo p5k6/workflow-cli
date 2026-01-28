@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/teamhephy/controller-sdk-go/domains"
+import "github.com/p5k6/controller-sdk-go/domains"
 
 // DomainsList lists domains registered with an app.
 func (d *HephyCmd) DomainsList(appID string, results int) error {

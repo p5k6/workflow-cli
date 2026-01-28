@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/teamhephy/controller-sdk-go/users"
+	"github.com/p5k6/controller-sdk-go/users"
 	"github.com/teamhephy/workflow-cli/settings"
 )
 

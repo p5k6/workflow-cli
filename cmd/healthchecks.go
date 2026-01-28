@@ -3,8 +3,8 @@ package cmd
 import (
 	"sort"
 
-	"github.com/teamhephy/controller-sdk-go/api"
-	"github.com/teamhephy/controller-sdk-go/config"
+	"github.com/p5k6/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/config"
 )
 
 func (d *HephyCmd) printHealthCheck(healthcheck api.Healthchecks) {

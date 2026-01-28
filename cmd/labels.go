@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/teamhephy/pkg/prettyprint"
+	"github.com/teamhephy/workflow-cli/pkg/prettyprint"
 
-	"github.com/teamhephy/controller-sdk-go/api"
-	"github.com/teamhephy/controller-sdk-go/appsettings"
+	"github.com/p5k6/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/appsettings"
 )
 
 // LabelsList list app's labels

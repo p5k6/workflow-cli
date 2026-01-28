@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/arschles/assert"
-	"github.com/teamhephy/controller-sdk-go"
+	"github.com/p5k6/controller-sdk-go"
 	"github.com/teamhephy/workflow-cli/pkg/git"
 	"github.com/teamhephy/workflow-cli/settings"
 )

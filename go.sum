@@ -13,12 +13,10 @@ github.com/mattn/go-runewidth v0.0.16 h1:E5ScNMtiwvlvB5paMFdw9p4kSQzbXFikJ5SQO6T
 github.com/mattn/go-runewidth v0.0.16/go.mod h1:Jdepj2loyihRzMpdS35Xk/zdY8IAYHsh153qUoGf23w=
 github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N7AbDhec=
 github.com/olekukonko/tablewriter v0.0.5/go.mod h1:hPp6KlRPjbx+hW8ykQs1w3UBbZlj6HuIJcUGPhkA7kY=
+github.com/p5k6/controller-sdk-go v1.202605.0 h1:gM8Eq7S+lrGkZtITXuS3dvS+ElktCOFu+NaV1xuO3tY=
+github.com/p5k6/controller-sdk-go v1.202605.0/go.mod h1:n2O0BXtobWrV6xv52ek/SUCZRYqaOXsHv2eQyuzGoRc=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
-github.com/teamhephy/controller-sdk-go v0.0.0-20181015154232-a1ffb4886a5f h1:n08Hb/jOUPGTuCc+vgSDYCEGdjl6BMwmNk9v2jI1RGY=
-github.com/teamhephy/controller-sdk-go v0.0.0-20181015154232-a1ffb4886a5f/go.mod h1:UCjog0+wgw7B0yZqCAbgbQ1MWlUhGnDq+Us5S585mS8=
-github.com/teamhephy/pkg v0.5.1-0.20180912202400-777f37a30108 h1:bKjBM1VmCYluaeNE8+TrnrQHNTiXSDGMElYwsS9pXOc=
-github.com/teamhephy/pkg v0.5.1-0.20180912202400-777f37a30108/go.mod h1:zCgZSasZSWew9pwyveP9KHZHPJA0hIR8d7G1cRNeWjs=
 golang.org/x/crypto v0.32.0 h1:euUpcYgM8WcP71gNpTqQCn6rC2t6ULUPiOzfWaXVVfc=
 golang.org/x/crypto v0.32.0/go.mod h1:ZnnJkOaASj8g0AjIduWNlq2NRxL0PlBrbKVyZ6V/Ugc=
 golang.org/x/net v0.0.0-20190213061140-3a22650c66bd/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=

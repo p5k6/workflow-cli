@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	hephy "github.com/teamhephy/controller-sdk-go"
+	hephy "github.com/p5k6/controller-sdk-go"
 	"github.com/teamhephy/workflow-cli/executable"
 	"github.com/teamhephy/workflow-cli/version"
 )
