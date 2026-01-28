@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"github.com/teamhephy/controller-sdk-go/releases"
+	"github.com/p5k6/controller-sdk-go/releases"
 )
 
 // ReleasesList lists an app's releases.

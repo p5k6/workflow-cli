@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/teamhephy/controller-sdk-go/tls"
+import "github.com/p5k6/controller-sdk-go/tls"
 
 // TLSInfo prints info about the TLS settings for the given app.
 func (d *HephyCmd) TLSInfo(appID string) error {

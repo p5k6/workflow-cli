@@ -3,7 +3,7 @@ package cmd
 import (
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/teamhephy/controller-sdk-go/builds"
+	"github.com/p5k6/controller-sdk-go/builds"
 )
 
 // BuildsList lists an app's builds.

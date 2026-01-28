@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/teamhephy/controller-sdk-go/api"
-	"github.com/teamhephy/controller-sdk-go/apps"
-	"github.com/teamhephy/controller-sdk-go/config"
-	"github.com/teamhephy/controller-sdk-go/domains"
+	"github.com/p5k6/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/apps"
+	"github.com/p5k6/controller-sdk-go/config"
+	"github.com/p5k6/controller-sdk-go/domains"
 	"github.com/teamhephy/workflow-cli/executable"
 	"github.com/teamhephy/workflow-cli/pkg/git"
 	"github.com/teamhephy/workflow-cli/pkg/logging"
@@ -50,7 +50,7 @@ func (d *HephyCmd) AppCreate(id, buildpack, remote string, noRemote bool) error 
 
 	if !noRemote {
 		if err = git.CreateRemote(git.DefaultCmd, s.Client.ControllerURL.Host, remote, app.ID); err != nil {
-			if strings.Contains(err.Error(), fmt.Sprintf("fatal: remote %s already exists.", remote)) {
+			if strings.Contains(err.Error(), fmt.Sprintf("remote %s already exists", remote)) {
 				msg := "A git remote with the name %s already exists. To overwrite this remote run:\n"
 				msg += "%s git:remote --force --remote %s --app %s"
 				return fmt.Errorf(msg, remote, executable.Name(), remote, app.ID)

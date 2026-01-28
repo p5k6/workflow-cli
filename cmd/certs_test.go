@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/arschles/assert"
-	"github.com/teamhephy/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/api"
 	"github.com/teamhephy/workflow-cli/pkg/testutil"
 )
 
@@ -71,13 +71,13 @@ func TestCertsList(t *testing.T) {
 	err = cmdr.CertsList(-1, time.Date(2016, time.June, 9, 0, 0, 0, 0, time.UTC))
 	assert.NoErr(t, err)
 
-	assert.Equal(t, b.String(), `        Name       |   Common Name    |    SubjectAltName    |         Expires          |   Fingerprint   |       Domains        |  Updated   |  Created    
-+------------------+------------------+----------------------+--------------------------+-----------------+----------------------+------------+------------+
-  test-example-com | test.example.com | test.com,example.com | 10 Nov 2014 (expired)    | 12:34[...]78:90 | test.com,example.com | 9 Jun 2016 | 9 Jun 2016  
-  test-deis-com    | test.deis.com    |                      | 1 Aug 2016 (in 2 months) | ab:12[...]12:ab |                      | 9 Jun 2016 | 9 Jun 2016  
-  test1            | 1.test.deis.com  |                      | 11 Jun 2016 (in 2 days)  |                 |                      | unknown    | unknown     
-  test2            | 2.test.deis.com  |                      | 1 Jan 2018 (in 2 years)  |                 |                      | unknown    | unknown     
-`, "output")
+	expected := "        Name       |   Common Name    |    SubjectAltName    |         Expires          |   Fingerprint   |       Domains        |  Updated   |  Created    \n"
+	expected += "-------------------+------------------+----------------------+--------------------------+-----------------+----------------------+------------+-------------\n"
+	expected += "  test-example-com | test.example.com | test.com,example.com | 10 Nov 2014 (expired)    | 12:34[...]78:90 | test.com,example.com | 9 Jun 2016 | 9 Jun 2016  \n"
+	expected += "  test-deis-com    | test.deis.com    |                      | 1 Aug 2016 (in 2 months) | ab:12[...]12:ab |                      | 9 Jun 2016 | 9 Jun 2016  \n"
+	expected += "  test1            | 1.test.deis.com  |                      | 11 Jun 2016 (in 2 days)  |                 |                      | unknown    | unknown     \n"
+	expected += "  test2            | 2.test.deis.com  |                      | 1 Jan 2018 (in 2 years)  |                 |                      | unknown    | unknown     \n"
+	assert.Equal(t, b.String(), expected, "output")
 
 	cf, server, err = testutil.NewTestServerAndClient()
 	if err != nil {
@@ -144,10 +144,10 @@ func TestCertsListLimit(t *testing.T) {
 	err = cmdr.CertsList(1, time.Date(2016, time.June, 9, 0, 0, 0, 0, time.UTC))
 	assert.NoErr(t, err)
 
-	assert.Equal(t, b.String(), `        Name       |   Common Name    |    SubjectAltName    |        Expires        |   Fingerprint   |       Domains        |  Updated   |  Created    
-+------------------+------------------+----------------------+-----------------------+-----------------+----------------------+------------+------------+
-  test-example-com | test.example.com | test.com,example.com | 10 Nov 2014 (expired) | 12:34[...]78:90 | test.com,example.com | 9 Jun 2016 | 9 Jun 2016  
-`, "output")
+	expected := "        Name       |   Common Name    |    SubjectAltName    |        Expires        |   Fingerprint   |       Domains        |  Updated   |  Created    \n"
+	expected += "-------------------+------------------+----------------------+-----------------------+-----------------+----------------------+------------+-------------\n"
+	expected += "  test-example-com | test.example.com | test.com,example.com | 10 Nov 2014 (expired) | 12:34[...]78:90 | test.com,example.com | 9 Jun 2016 | 9 Jun 2016  \n"
+	assert.Equal(t, b.String(), expected, "output")
 
 }
 

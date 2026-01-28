@@ -9,7 +9,7 @@ import (
 	"github.com/teamhephy/workflow-cli/executable"
 
 	docopt "github.com/docopt/docopt-go"
-	"github.com/teamhephy/controller-sdk-go/api"
+	"github.com/p5k6/controller-sdk-go/api"
 )
 
 // TODO: This is for supporting backward compatibility and should be removed

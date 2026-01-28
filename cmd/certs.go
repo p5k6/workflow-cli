@@ -8,9 +8,9 @@ import (
 
 	"github.com/olekukonko/tablewriter"
 
-	"github.com/teamhephy/controller-sdk-go"
-	"github.com/teamhephy/controller-sdk-go/certs"
-	dtime "github.com/teamhephy/controller-sdk-go/pkg/time"
+	"github.com/p5k6/controller-sdk-go"
+	"github.com/p5k6/controller-sdk-go/certs"
+	dtime "github.com/p5k6/controller-sdk-go/pkg/time"
 	"github.com/teamhephy/workflow-cli/settings"
 )
 

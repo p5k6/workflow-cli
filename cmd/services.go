@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/teamhephy/pkg/prettyprint"
+	"github.com/teamhephy/workflow-cli/pkg/prettyprint"
 
-	"github.com/teamhephy/controller-sdk-go/services"
+	"github.com/p5k6/controller-sdk-go/services"
 )
 
 // ServicesList lists extra services for the app
