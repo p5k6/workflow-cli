@@ -17,6 +17,5 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . /go/src/github.com/teamhephy/workflow-cli
-COPY ./zscaler_root_ca.crt /etc/ssl/certs/zscaler_root_ca.crt
 
 RUN go build
