@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/teamhephy/workflow-cli/pkg/prettyprint"
+	"github.com/p5k6/workflow-cli/pkg/prettyprint"
 
 	"github.com/p5k6/controller-sdk-go/api"
 	"github.com/p5k6/controller-sdk-go/config"

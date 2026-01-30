@@ -12,8 +12,8 @@ import (
 
 	"github.com/p5k6/controller-sdk-go/api"
 	"github.com/p5k6/controller-sdk-go/keys"
-	"github.com/teamhephy/workflow-cli/pkg/ssh"
-	"github.com/teamhephy/workflow-cli/settings"
+	"github.com/p5k6/workflow-cli/pkg/ssh"
+	"github.com/p5k6/workflow-cli/settings"
 )
 
 // KeysList lists a user's keys.

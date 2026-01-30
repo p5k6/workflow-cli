@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/teamhephy/workflow-cli/pkg/prettyprint"
+	"github.com/p5k6/workflow-cli/pkg/prettyprint"
 
 	"github.com/p5k6/controller-sdk-go/api"
 	"github.com/p5k6/controller-sdk-go/appsettings"
@@ -125,7 +125,7 @@ func parseLabel(label string) (string, string, error) {
 
 	if len(parts) != 2 || parts[0] == "" || parts[1] == "" {
 		return "", "", fmt.Errorf(`%s is invalid, Must be in format key=value
-Examples: git_repo=https://github.com/teamhephy/workflow team=frontend`, label)
+Examples: git_repo=https://github.com/p5k6/workflow team=frontend`, label)
 	}
 
 	return parts[0], parts[1], nil

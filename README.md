@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/teamhephy/workflow-cli.svg?branch=master)](https://travis-ci.org/teamhephy/workflow-cli)
+[![Build Status](https://travis-ci.org/p5k6/workflow-cli.svg?branch=master)](https://travis-ci.org/p5k6/workflow-cli)
 
 |![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Anchor_pictogram_yellow.svg/156px-Anchor_pictogram_yellow.svg.png) | Hephy Workflow is the open source fork of Deis Workflow.<br />Please [go here](https://www.teamhephy.com/) for more detail. |
 |---:|---|
+| 01/27/2026 | Team Hephy appears to have abandoned project; p5k6 fork updated with current libraries, Go 1.21, and modern TLS/security stack |
 | 08/27/2018 | Team Hephy [blog][] comes online |
 | 08/20/2018 | Deis [#community slack][] goes dark |
 | 08/10/2018 | Hephy Workflow [v2.19.4][] fourth patch release |
@@ -19,7 +20,7 @@
 # Deis Client
 
 [![Build Status](https://ci.deis.io/buildStatus/icon?job=Deis/workflow-cli/master)](https://ci.deis.io/job/Deis/job/workflow-cli/job/master/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/teamhephy/workflow-cli)](https://goreportcard.com/report/github.com/teamhephy/workflow-cli)
+[![Go Report Card](https://goreportcard.com/badge/github.com/p5k6/workflow-cli)](https://goreportcard.com/report/github.com/p5k6/workflow-cli)
 [![codebeat badge](https://codebeat.co/badges/05d314a8-ca61-4211-b69e-e7a3033662c8)](https://codebeat.co/projects/github-com-deis-workflow-cli)
 [![codecov](https://codecov.io/gh/deis/workflow-cli/branch/master/graph/badge.svg)](https://codecov.io/gh/deis/workflow-cli)
 
@@ -34,7 +35,7 @@ Download Links:
 
 `deis` is a command line utility used to interact with the [Deis](http://deis.io) open source PaaS.
 
-Please add any [issues](https://github.com/teamhephy/workflow-cli/issues) you find with this software to the [Deis Workflow CLI Project](https://github.com/teamhephy/workflow-cli).
+Please add any [issues](https://github.com/p5k6/workflow-cli/issues) you find with this software to the [Deis Workflow CLI Project](https://github.com/p5k6/workflow-cli).
 
 ## Installation
 
@@ -166,7 +167,7 @@ To learn more about a command run `deis help <command>`.
 
 ## License
 
-see [LICENSE](https://github.com/teamhephy/workflow-cli/blob/master/LICENSE)
+see [LICENSE](https://github.com/p5k6/workflow-cli/blob/master/LICENSE)
 
 [v2.18]: https://github.com/teamhephy/workflow/releases/tag/v2.18.0
 [k8s-home]: http://kubernetes.io

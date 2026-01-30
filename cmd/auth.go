@@ -8,7 +8,7 @@ import (
 
 	hephy "github.com/p5k6/controller-sdk-go"
 	"github.com/p5k6/controller-sdk-go/auth"
-	"github.com/teamhephy/workflow-cli/settings"
+	"github.com/p5k6/workflow-cli/settings"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

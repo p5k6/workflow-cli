@@ -2,8 +2,8 @@ package parser
 
 import (
 	docopt "github.com/docopt/docopt-go"
-	"github.com/teamhephy/workflow-cli/cmd"
-	"github.com/teamhephy/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/cmd"
+	"github.com/p5k6/workflow-cli/executable"
 )
 
 // Maintenance displays all relevant commands for `hephy maintenance`.

@@ -1,5 +1,5 @@
 # the filepath to this repository, relative to $GOPATH/src
-repo_path = github.com/teamhephy/workflow-cli
+repo_path = github.com/p5k6/workflow-cli
 
 HOST_OS := $(shell uname)
 ifeq ($(HOST_OS),Darwin)

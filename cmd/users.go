@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/p5k6/controller-sdk-go/users"
-	"github.com/teamhephy/workflow-cli/settings"
+	"github.com/p5k6/workflow-cli/settings"
 )
 
 // UsersList lists users registered with the controller.

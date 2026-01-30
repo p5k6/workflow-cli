@@ -1,4 +1,4 @@
-module github.com/teamhephy/workflow-cli
+module github.com/p5k6/workflow-cli
 
 go 1.21
 

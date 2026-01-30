@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 
 	hephy "github.com/p5k6/controller-sdk-go"
-	"github.com/teamhephy/workflow-cli/executable"
-	"github.com/teamhephy/workflow-cli/version"
+	"github.com/p5k6/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/version"
 )
 
 // DefaultResponseLimit is the default number of responses to return on requests that can
