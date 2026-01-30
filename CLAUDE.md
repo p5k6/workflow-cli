@@ -5,9 +5,10 @@
 - Branch naming: `fix/description`, `feature/description`, `chore/description`
 
 ## Project Overview
-- Go CLI client for Hephy Workflow (originally Deis Workflow) - a PaaS for Kubernetes
+- Go CLI client for the Deis Workflow PaaS (Kubernetes-based), derived from the original Deis / Hephy codebase; this repository contains the CLI only
 - Module path: `github.com/p5k6/workflow-cli`
-- Forked from abandoned `teamhephy/workflow-cli` in January 2026
+- Forked from `teamhephy/workflow-cli` in January 2026 after upstream activity ceased
+
 
 ## Build & Test
 - Requires Docker for building
@@ -19,9 +20,10 @@
 - Dev builds: `{TAG}-dev+g{SHA}` (e.g., `v3.0.0-dev+gbc768787`)
 - Stable releases: `{TAG}` (e.g., `v3.0.0`)
 - The `g` prefix on SHA indicates git commit
+- Do not change versioning format without explicit instruction
 
 ## Dependencies
-- `github.com/p5k6/controller-sdk-go` - API client (forked from teamhephy)
+- `github.com/p5k6/controller-sdk-go` - API client used by the CLI (forked from teamhephy)
 - `pkg/prettyprint` - Inlined locally (was teamhephy/pkg)
 
 ## Historical Context
