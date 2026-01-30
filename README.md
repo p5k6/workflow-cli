@@ -1,5 +1,24 @@
-|![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Anchor_pictogram_yellow.svg/156px-Anchor_pictogram_yellow.svg.png) | Hephy Workflow is the open source fork of Deis Workflow.<br />Please [go here](https://www.teamhephy.com/) for more detail. |
+## About this fork
+
+This repository contains a lightly maintained fork of the Deis Workflow CLI (`deis`).
+
+Lineage:
+- Deis Workflow (original upstream project, now archived)
+- Hephy Workflow (community fork)
+- This fork (small, practical updates to keep the CLI buildable and usable)
+
+This project is independently maintained and is not affiliated with Microsoft.
+
+The CLI binary continues to be named `deis` for compatibility with existing
+documentation and scripts.
+
+Note on upstream activity: as of 2026-01-27, the Hephy project appears inactive.
+This fork keeps the historical `deis` CLI name for compatibility.
+
+## History
+| Date | Event |
 |---:|---|
+| 01/30/2026 | p5k6 fork tagged release 3.0.0 to differentiate newest fork from previous builds |
 | 01/27/2026 | Team Hephy appears to have abandoned project; p5k6 fork updated with current libraries, Go 1.21, and modern TLS/security stack |
 | 08/27/2018 | Team Hephy [blog][] comes online |
 | 08/20/2018 | Deis [#community slack][] goes dark |
@@ -32,7 +51,11 @@ Please add any [issues](https://github.com/p5k6/workflow-cli/issues) you find wi
 
 To compile the client from scratch, ensure you have Docker installed and run
 
+##### Development branch
     $ make
+
+##### stable build
+    $ make build-stable
 
 ### From Scratch on Windows
 
