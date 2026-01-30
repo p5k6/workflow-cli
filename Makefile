@@ -30,14 +30,14 @@ define check-static-binary
 endef
 
 build: build-test-image
-	$(eval GO_LDFLAGS= -ldflags '-X ${repo_path}/version.Version=dev-${REVISION}')
+	$(eval GO_LDFLAGS= -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}-dev+g${REVISION}')
 	docker run --rm -e GOOS=${GOOS} -v ${CURDIR}/_dist:/out ${IMAGE} go build -a -installsuffix cgo ${GO_LDFLAGS} -o /out/deis .
 	@$(call check-static-binary,_dist/deis)
 	@echo "${GOOS} binary written to _dist/deis"
 
 # This is supposed to be run within a docker container
 build-latest:
-	$(eval GO_LDFLAGS = -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}-${REVISION}')
+	$(eval GO_LDFLAGS = -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}-dev+g${REVISION}')
 	gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="${DIST_DIR}/deis-latest-{{.OS}}-{{.Arch}}" .
 
 # This is supposed to be run within a docker container
