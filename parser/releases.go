@@ -5,8 +5,8 @@ import (
 	"strconv"
 
 	docopt "github.com/docopt/docopt-go"
-	"github.com/teamhephy/workflow-cli/cmd"
-	"github.com/teamhephy/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/cmd"
+	"github.com/p5k6/workflow-cli/executable"
 )
 
 // Releases routes releases commands to their specific function.

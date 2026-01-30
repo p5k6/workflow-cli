@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/teamhephy/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/executable"
 )
 
 var filepathRegex = regexp.MustCompile(`^.*[/\\].+\.json$`)

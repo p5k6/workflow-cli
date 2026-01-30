@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/teamhephy/workflow-cli/executable"
-	"github.com/teamhephy/workflow-cli/pkg/git"
+	"github.com/p5k6/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/pkg/git"
 )
 
 const remoteCreationMsg = "Git remote %s successfully created for app %s.\n"

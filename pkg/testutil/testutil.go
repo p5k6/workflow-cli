@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/p5k6/controller-sdk-go"
-	"github.com/teamhephy/workflow-cli/settings"
+	"github.com/p5k6/workflow-cli/settings"
 )
 
 // TestServer represents a test HTTP server along with a path to a config file

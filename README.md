@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/teamhephy/workflow-cli.svg?branch=master)](https://travis-ci.org/teamhephy/workflow-cli)
-
 |![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Anchor_pictogram_yellow.svg/156px-Anchor_pictogram_yellow.svg.png) | Hephy Workflow is the open source fork of Deis Workflow.<br />Please [go here](https://www.teamhephy.com/) for more detail. |
 |---:|---|
+| 01/27/2026 | Team Hephy appears to have abandoned project; p5k6 fork updated with current libraries, Go 1.21, and modern TLS/security stack |
 | 08/27/2018 | Team Hephy [blog][] comes online |
 | 08/20/2018 | Deis [#community slack][] goes dark |
 | 08/10/2018 | Hephy Workflow [v2.19.4][] fourth patch release |
@@ -18,128 +17,16 @@
 
 # Deis Client
 
-[![Build Status](https://ci.deis.io/buildStatus/icon?job=Deis/workflow-cli/master)](https://ci.deis.io/job/Deis/job/workflow-cli/job/master/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/teamhephy/workflow-cli)](https://goreportcard.com/report/github.com/teamhephy/workflow-cli)
-[![codebeat badge](https://codebeat.co/badges/05d314a8-ca61-4211-b69e-e7a3033662c8)](https://codebeat.co/projects/github-com-deis-workflow-cli)
+[![Go Report Card](https://goreportcard.com/badge/github.com/p5k6/workflow-cli)](https://goreportcard.com/report/github.com/p5k6/workflow-cli)
 [![codecov](https://codecov.io/gh/deis/workflow-cli/branch/master/graph/badge.svg)](https://codecov.io/gh/deis/workflow-cli)
-
-Download Links:
-
-- [64 Bit Linux](https://storage.googleapis.com/workflow-cli-master/deis-latest-linux-amd64)
-- [32 Bit Linux](https://storage.googleapis.com/workflow-cli-master/deis-latest-linux-386)
-- [64 Bit Mac OS X](https://storage.googleapis.com/workflow-cli-master/deis-latest-darwin-amd64)
-- [32 Bit Max OS X](https://storage.googleapis.com/workflow-cli-master/deis-latest-darwin-386)
-- [64 Bit Windows](https://storage.googleapis.com/workflow-cli-master/deis-latest-windows-amd64.exe)
-- [32 Bit Windows](https://storage.googleapis.com/workflow-cli-master/deis-latest-windows-386.exe)
 
 `deis` is a command line utility used to interact with the [Deis](http://deis.io) open source PaaS.
 
-Please add any [issues](https://github.com/teamhephy/workflow-cli/issues) you find with this software to the [Deis Workflow CLI Project](https://github.com/teamhephy/workflow-cli).
+Please add any [issues](https://github.com/p5k6/workflow-cli/issues) you find with this software to the [Deis Workflow CLI Project](https://github.com/p5k6/workflow-cli).
 
 ## Installation
 
-### Pre-built Binary
-
-See the appropriate sub-section below for your system to download and install the latest build of this software.
-
-#### 64 Bit Linux
-
-Master:
-
-```console
-curl -o deis https://storage.googleapis.com/workflow-cli-master/deis-latest-linux-amd64 && chmod +x deis
-```
-
-Latest stable release:
-
-```
-curl -o deis https://storage.googleapis.com/workflow-cli-release/deis-stable-linux-amd64 && chmod +x deis
-```
-
-#### 32 Bit Linux
-
-Master:
-
-```console
-curl -o deis https://storage.googleapis.com/workflow-cli-master/deis-latest-linux-386 && chmod +x deis
-```
-
-Latest stable release:
-
-```
-curl -o deis https://storage.googleapis.com/workflow-cli-release/deis-stable-linux-386 && chmod +x deis
-```
-
-#### 64 Bit Mac OS X
-
-Master:
-
-```console
-curl -o deis https://storage.googleapis.com/workflow-cli-master/deis-latest-darwin-amd64 && chmod +x deis
-```
-
-Latest stable release:
-
-```
-curl -o deis https://storage.googleapis.com/workflow-cli-release/deis-stable-darwin-amd64 && chmod +x deis
-```
-
-#### 32 Bit Max OS X
-
-Master:
-
-```console
-curl -o deis https://storage.googleapis.com/workflow-cli-master/deis-latest-darwin-386 && chmod +x deis
-```
-
-Latest stable release:
-
-```
-curl -o deis https://storage.googleapis.com/workflow-cli-release/deis-stable-darwin-386 && chmod +x deis
-```
-
-#### 64 Bit Windows
-
-Master:
-
-```console
-powershell -NoProfile -ExecutionPolicy Bypass -Command "(new-object net.webclient).DownloadFile('https://storage.googleapis.com/workflow-cli-master/deis-latest-windows-amd64.exe', 'deis.exe')"
-```
-
-Latest stable release:
-
-```
-powershell -NoProfile -ExecutionPolicy Bypass -Command "(new-object net.webclient).DownloadFile('https://storage.googleapis.com/workflow-cli-release/deis-stable-windows-amd64.exe', 'deis.exe')"
-```
-
-#### 32 Bit Windows
-
-Master:
-
-```console
-powershell -NoProfile -ExecutionPolicy Bypass -Command "(new-object net.webclient).DownloadFile('https://storage.googleapis.com/workflow-cli-master/deis-latest-windows-386.exe', 'deis.exe')"
-```
-
-Latest stable release:
-
-```
-powershell -NoProfile -ExecutionPolicy Bypass -Command "(new-object net.webclient).DownloadFile('https://storage.googleapis.com/workflow-cli-release/deis-stable-windows-386.exe', 'deis.exe')"
-```
-
-
-After you execute the appropriate command for your system, you'll have a `deis` binary in the current directory.
-
-Run the following to see the version:
-
-```console
-$ ./deis --version
-```
-
-You can then move it anywhere in your path:
-
-```console
-$ mv deis /usr/local/bin
-```
+### Prebuilt binaries - *no longer available*
 
 ### From Scratch on OS X and Linux
 
@@ -148,6 +35,8 @@ To compile the client from scratch, ensure you have Docker installed and run
     $ make
 
 ### From Scratch on Windows
+
+(ed note - I'm on macos and have not tested windows myself....)
 
 To compile the client from scratch, open PowerShell and execute the following commands in the source directory.
 
@@ -166,7 +55,7 @@ To learn more about a command run `deis help <command>`.
 
 ## License
 
-see [LICENSE](https://github.com/teamhephy/workflow-cli/blob/master/LICENSE)
+see [LICENSE](https://github.com/p5k6/workflow-cli/blob/master/LICENSE)
 
 [v2.18]: https://github.com/teamhephy/workflow/releases/tag/v2.18.0
 [k8s-home]: http://kubernetes.io

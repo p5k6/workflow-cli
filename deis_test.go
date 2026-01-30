@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/arschles/assert"
-	"github.com/teamhephy/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/executable"
 )
 
 func TestHelpReformatting(t *testing.T) {

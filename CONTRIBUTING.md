@@ -1,4 +1,4 @@
-# Contributing to Deis
+# Contributing
 
-This project is part of Deis. You can find the latest contribution
-guidelines [in our documentation](https://docs.teamhephy.com/contributing/overview/).
+Contributions are welcome! Please open an issue or pull request on
+[GitHub](https://github.com/p5k6/workflow-cli).

@@ -10,11 +10,11 @@ import (
 	"github.com/p5k6/controller-sdk-go/apps"
 	"github.com/p5k6/controller-sdk-go/config"
 	"github.com/p5k6/controller-sdk-go/domains"
-	"github.com/teamhephy/workflow-cli/executable"
-	"github.com/teamhephy/workflow-cli/pkg/git"
-	"github.com/teamhephy/workflow-cli/pkg/logging"
-	"github.com/teamhephy/workflow-cli/pkg/webbrowser"
-	"github.com/teamhephy/workflow-cli/settings"
+	"github.com/p5k6/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/pkg/git"
+	"github.com/p5k6/workflow-cli/pkg/logging"
+	"github.com/p5k6/workflow-cli/pkg/webbrowser"
+	"github.com/p5k6/workflow-cli/settings"
 )
 
 // AppCreate creates an app.

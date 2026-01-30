@@ -2,8 +2,8 @@ package parser
 
 import (
 	docopt "github.com/docopt/docopt-go"
-	"github.com/teamhephy/workflow-cli/cmd"
-	"github.com/teamhephy/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/cmd"
+	"github.com/p5k6/workflow-cli/executable"
 )
 
 // Labels displays all relevant commands for `hephy label`.
@@ -71,7 +71,7 @@ Usage: {{.Name}} labels:set [options] <key>=<value>...
 
 Arguments:
   <key> the label key, for example: "git_repo" or "team"
-  <value> the label value, for example: "https://github.com/teamhephy/workflow" or "frontend"
+  <value> the label value, for example: "https://github.com/p5k6/workflow" or "frontend"
 
 Options:
   -a --app=<app>

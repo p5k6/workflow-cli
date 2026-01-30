@@ -9,7 +9,7 @@ import (
 
 	"github.com/arschles/assert"
 	"github.com/p5k6/controller-sdk-go/api"
-	"github.com/teamhephy/workflow-cli/pkg/testutil"
+	"github.com/p5k6/workflow-cli/pkg/testutil"
 )
 
 func TestReleasesList(t *testing.T) {

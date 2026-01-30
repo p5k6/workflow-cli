@@ -8,7 +8,7 @@ import (
 
 	"github.com/arschles/assert"
 	"github.com/p5k6/controller-sdk-go/api"
-	"github.com/teamhephy/workflow-cli/pkg/testutil"
+	"github.com/p5k6/workflow-cli/pkg/testutil"
 	"strings"
 )
 
@@ -27,7 +27,7 @@ func TestLabelsList(t *testing.T) {
 		fmt.Fprintf(w, `{
 			"owner": "jim",
 			"app": "rivendell",
-		    "label": {"team" : "teamhephy", "git_repo": "https://github.com/p5k6/controller-sdk-go"},
+		    "label": {"team" : "myteam", "git_repo": "https://github.com/p5k6/controller-sdk-go"},
 			"created": "2014-01-01T00:00:00UTC",
 			"updated": "2014-01-01T00:00:00UTC",
 			"uuid": "de1bf5b5-4a72-4f94-a10c-d2a3741cdf75"
@@ -38,7 +38,7 @@ func TestLabelsList(t *testing.T) {
 	assert.NoErr(t, err)
 	assert.Equal(t, strings.TrimSpace(b.String()), `=== rivendell Label
 git_repo:      https://github.com/p5k6/controller-sdk-go
-team:          teamhephy`, "output")
+team:          myteam`, "output")
 
 	server.Mux.HandleFunc("/v2/apps/mordor/settings/", func(w http.ResponseWriter, r *http.Request) {
 		testutil.SetHeaders(w)
@@ -71,14 +71,14 @@ func TestListsSet(t *testing.T) {
 		testutil.SetHeaders(w)
 		data := map[string]interface{}{
 			"git_repo": "https://github.com/p5k6/controller-sdk-go",
-			"team":     "teamhephy",
+			"team":     "myteam",
 		}
 		testutil.AssertBody(t, api.AppSettings{Label: data}, r)
 		fmt.Fprintf(w, "{}")
 	})
 
 	err = cmdr.LabelsSet("lothlorien", []string{
-		"team=teamhephy",
+		"team=myteam",
 		"git_repo=https://github.com/p5k6/controller-sdk-go",
 	})
 	assert.NoErr(t, err)

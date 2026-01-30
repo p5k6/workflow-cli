@@ -11,7 +11,7 @@ import (
 	"github.com/p5k6/controller-sdk-go"
 	"github.com/p5k6/controller-sdk-go/certs"
 	dtime "github.com/p5k6/controller-sdk-go/pkg/time"
-	"github.com/teamhephy/workflow-cli/settings"
+	"github.com/p5k6/workflow-cli/settings"
 )
 
 const dateFormat = "2 Jan 2006"

@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	docopt "github.com/docopt/docopt-go"
-	"github.com/teamhephy/workflow-cli/cmd"
-	"github.com/teamhephy/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/cmd"
+	"github.com/p5k6/workflow-cli/executable"
 )
 
 // Auth routes auth commands to the specific function.

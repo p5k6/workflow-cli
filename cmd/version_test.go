@@ -8,8 +8,8 @@ import (
 
 	"github.com/arschles/assert"
 	"github.com/p5k6/controller-sdk-go"
-	"github.com/teamhephy/workflow-cli/pkg/testutil"
-	"github.com/teamhephy/workflow-cli/version"
+	"github.com/p5k6/workflow-cli/pkg/testutil"
+	"github.com/p5k6/workflow-cli/version"
 )
 
 func TestVersion(t *testing.T) {

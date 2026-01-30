@@ -9,10 +9,10 @@ import (
 	"syscall"
 
 	docopt "github.com/docopt/docopt-go"
-	"github.com/teamhephy/workflow-cli/cli"
-	"github.com/teamhephy/workflow-cli/cmd"
-	"github.com/teamhephy/workflow-cli/executable"
-	"github.com/teamhephy/workflow-cli/parser"
+	"github.com/p5k6/workflow-cli/cli"
+	"github.com/p5k6/workflow-cli/cmd"
+	"github.com/p5k6/workflow-cli/executable"
+	"github.com/p5k6/workflow-cli/parser"
 )
 
 var extensionPrefix = executable.Name() + "-"

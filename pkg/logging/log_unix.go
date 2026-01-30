@@ -7,7 +7,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/teamhephy/workflow-cli/pkg/prettyprint"
+	"github.com/p5k6/workflow-cli/pkg/prettyprint"
 )
 
 const colorStringEscape = "\033[3%dm"
