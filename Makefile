@@ -35,25 +35,21 @@ build: build-test-image
 	@$(call check-static-binary,_dist/deis)
 	@echo "${GOOS} binary written to _dist/deis"
 
-# This is supposed to be run within a docker container
-build-latest:
+build-latest: build-test-image
 	$(eval GO_LDFLAGS = -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}-dev+g${REVISION}')
-	gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="${DIST_DIR}/deis-latest-{{.OS}}-{{.Arch}}" .
+	docker run --rm -v ${CURDIR}/_dist:/out ${IMAGE} gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="/out/deis-latest-{{.OS}}-{{.Arch}}" .
 
-# This is supposed to be run within a docker container
-build-revision:
+build-revision: build-test-image
 	$(eval GO_LDFLAGS = -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}-${REVISION}')
-	gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="${DIST_DIR}/${REVISION}/deis-${REVISION}-{{.OS}}-{{.Arch}}" .
+	docker run --rm -v ${CURDIR}/_dist:/out ${IMAGE} gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="/out/${REVISION}/deis-${REVISION}-{{.OS}}-{{.Arch}}" .
 
-# This is supposed to be run within a docker container
-build-stable:
+build-stable: build-test-image
 	$(eval GO_LDFLAGS = -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}')
-	gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="${DIST_DIR}/deis-stable-{{.OS}}-{{.Arch}}" .
+	docker run --rm -v ${CURDIR}/_dist:/out ${IMAGE} gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="/out/deis-stable-{{.OS}}-{{.Arch}}" .
 
-# This is supposed to be run within a docker container
-build-tag:
+build-tag: build-test-image
 	$(eval GO_LDFLAGS = -ldflags '-X ${repo_path}/version.Version=${GIT_TAG}')
-	gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="${DIST_DIR}/${GIT_TAG}/deis-${GIT_TAG}-{{.OS}}-{{.Arch}}" .
+	docker run --rm -v ${CURDIR}/_dist:/out ${IMAGE} gox -verbose ${GO_LDFLAGS} ${BUILD_LIST} -output="/out/${GIT_TAG}/deis-${GIT_TAG}-{{.OS}}-{{.Arch}}" .
 
 build-all: build-latest build-revision
 
